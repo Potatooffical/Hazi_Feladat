@@ -12,17 +12,27 @@ namespace _27_Feladat
         {
             /*Írj programot, amely beolvas egy egész számot, majd elosztja 2-vel annyiszor,
             ahányszor lehet és közben felírja a számot a kettes számok szorzataként
-            megszorozva egy olyan számmal, amely már nem osztható 2-vel.
-             */
+            megszorozva egy olyan számmal, amely már nem osztható 2-vel.*/
             Console.Write("Kérek egy egész számot: ");
-            int egeszSzam = int.Parse(Console.ReadLine());
-            int kettesHatvany = 0;
-            while (egeszSzam % 2 == 0)
+            int szam = int.Parse(Console.ReadLine());
+            int osztodb = 0;
+            for (int i = 2; i < szam; i++)
             {
-                egeszSzam /= 2;
-                kettesHatvany++;
+                for (int j = 1; j < szam; j++)
+                {
+                    if (i % j == 0)
+                    {
+                        osztodb++;
+                    }
+                }
+                if (osztodb == 2)
+                {
+                    Console.Write($"{i}");
+                }
+                szam = 0;
             }
-            Console.WriteLine($"{egeszSzam} = 2^{kettesHatvany}*{egeszSzam}");
+            
+            
             Console.ReadKey();
         }
     }
