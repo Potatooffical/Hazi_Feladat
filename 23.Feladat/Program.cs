@@ -15,14 +15,13 @@ namespace _23.Feladat
             megszorozva egy olyan számmal, amely már nem osztható 2 - vel.Például:*/
             Console.Write("Kérek egy egész számot: ");
             int szam = int.Parse(Console.ReadLine());
-            int n = szam;
             int szam1 = 0;
-            while (n % 2 == 0)
+            while (szam % 2 == 0)
             {
-                n /= 2;
+                szam /= 2;
                 szam1++;
             }
-            Console.Write($"{szam} = 2^{szam1}*{n}");
+            Console.Write($"2^{szam1}*{szam}");
             Console.ReadKey();
         }
     }
