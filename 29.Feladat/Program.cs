@@ -13,7 +13,6 @@ namespace _29.Feladat
             /*Írj programot, ami beolvas egy számot, majd kiírja a szám prímtényezős felbontását!*/
             Console.Write("Kérek egy számot: ");
             int szam = int.Parse(Console.ReadLine());
-            int eredetiSzam = szam;
             List<int> primtenyezok = new List<int>();
             for (int i = 2; i <= szam; i++)
             {
@@ -23,7 +22,7 @@ namespace _29.Feladat
                     szam /= i;
                 }
             }
-            Console.WriteLine($"{eredetiSzam} = {string.Join(" * ", primtenyezok)}");
+            Console.WriteLine($"{szam} = {string.Join(" * ", primtenyezok)}");
             Console.ReadKey();
         }
     }

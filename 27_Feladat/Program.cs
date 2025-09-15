@@ -16,14 +16,13 @@ namespace _27_Feladat
              */
             Console.Write("Kérek egy egész számot: ");
             int egeszSzam = int.Parse(Console.ReadLine());
-            int oszthato = egeszSzam;
             int kettesHatvany = 0;
-            while (oszthato % 2 == 0)
+            while (egeszSzam % 2 == 0)
             {
-                oszthato /= 2;
+                egeszSzam /= 2;
                 kettesHatvany++;
             }
-            Console.WriteLine($"{egeszSzam} = 2^{kettesHatvany}*{oszthato}");
+            Console.WriteLine($"{egeszSzam} = 2^{kettesHatvany}*{egeszSzam}");
             Console.ReadKey();
         }
     }
