@@ -22,7 +22,7 @@ namespace _23.Feladat
                 n /= 2;
                 szam1++;
             }
-            Console.Write($"{szam} = 2^{szam1} * {n}");
+            Console.Write($"{szam} = 2^{szam1}*{n}");
 
             Console.ReadKey();
         }

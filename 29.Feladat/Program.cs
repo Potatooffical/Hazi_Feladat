@@ -25,7 +25,6 @@ namespace _29.Feladat
             }
             Console.WriteLine($"{eredetiSzam} = {string.Join(" * ", primtenyezok)}");
             Console.ReadKey();
-
         }
     }
 }

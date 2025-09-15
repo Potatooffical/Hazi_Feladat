@@ -23,7 +23,8 @@ namespace _27_Feladat
                 oszthato /= 2;
                 kettesHatvany++;
             }
-            Console.WriteLine($"{egeszSzam} = 2^{kettesHatvany} * {oszthato}");
+            Console.WriteLine($"{egeszSzam} = 2^{kettesHatvany}*{oszthato}");
+            Console.ReadKey();
         }
     }
 }

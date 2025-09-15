@@ -11,20 +11,13 @@ namespace _32.Feladat
         static void Main(string[] args)
         {
             //Írj programot, ami beolvas egy számot, és kiírja az ilyen alapú szorzótáblát! 
-
-
             Console.Write("Adj meg egy számot: ");
             int szam = int.Parse(Console.ReadLine());
-
             Console.WriteLine($"\n{szam} szorzótáblája:\n");
-
             for (int i = 1; i <= 10; i++)
             {
                 Console.WriteLine($"{szam} * {i} = {szam * i}");
             }
-
-
-
             Console.ReadKey();
         }
     }
